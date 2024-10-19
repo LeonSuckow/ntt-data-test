@@ -1,8 +1,10 @@
 # Teste técnico frontend - NTT Data
 
-![Formulario](https://github.com/LeonSuckow/agrotis-test/blob/main/src/assets/print_form.png?raw=true)
+![Wireframe](https://github.com/LeonSuckow/ntt-data-test/blob/master/public/assets/NTT%20Data%20-%20WireFrame.png?raw=true)
 
-![Formulario](https://github.com/LeonSuckow/agrotis-test/blob/main/src/assets/print_form_invalid.png?raw=true)
+![ListScreen](https://github.com/LeonSuckow/ntt-data-test/blob/master/public/assets/list-screen.png?raw=true)
+
+![DetailScreen](https://github.com/LeonSuckow/ntt-data-test/blob/master/public/assets/detail-screen.png?raw=true)
 
 1. **Requisitos**
 - Angular;
