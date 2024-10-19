@@ -6,6 +6,10 @@
 
 ![DetailScreen](https://github.com/LeonSuckow/ntt-data-test/blob/master/public/assets/detail-screen.png?raw=true)
 
+**Demo**
+ - https://leonsuckow.github.io/ntt-data-test/
+
+
 1. **Requisitos**
 - Angular;
 - Usar Bootstrap;
