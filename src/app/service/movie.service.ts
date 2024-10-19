@@ -13,7 +13,7 @@ import { LoadingService } from './loading.service';
   providedIn: 'root',
 })
 export class MovieService {
-  private apiKey = '4228e035';
+  private apiKey = '4228e035'; // TODO: mudar para uma variavel de ambiente para não ficar exposto
   private apiUrl = `http://www.omdbapi.com/?apikey=${this.apiKey}`;
 
   constructor(
