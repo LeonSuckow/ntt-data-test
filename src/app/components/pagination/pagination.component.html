@@ -1,0 +1,19 @@
+<nav>
+  <ul class="pagination my-5">
+    <li class="page-item" [class.disabled]="pagination.currentPage === 1">
+      <button class="page-link" (click)="prevPage()">&laquo;</button>
+    </li>
+
+    <li
+      *ngFor="let page of visiblePages"
+      class="page-item"
+      [class.active]="pagination.currentPage === page"
+    >
+      <button class="page-link" (click)="goToPage(page)">{{ page }}</button>
+    </li>
+
+    <li class="page-item" [class.disabled]="pagination.currentPage === pagination.totalPages">
+      <button class="page-link" (click)="nextPage()">&raquo;</button>
+    </li>
+  </ul>
+</nav>

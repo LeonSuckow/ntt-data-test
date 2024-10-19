@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #141414 !important;
+  .application {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+  }
+  .header {
+    background-color: #181818 !important;
+  }
+
+  .footer {
+    background-color: #181818 !important;
+  }
+}

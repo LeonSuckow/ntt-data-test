@@ -1,0 +1,46 @@
+<div class="px-4 my-4">
+  <button (click)="onBackToList()" class="btn btn-outline-primary">
+    <i class="bi bi-arrow-left"></i>
+  </button>
+</div>
+<div
+  class="movie-display px-4 mb-4 d-flex flex-column flex-xl-row justify-content-xl-between justify-content-sm-center"
+>
+  <div class="movie-info">
+    <h3>{{ movie.Title }}</h3>
+    <p>
+      {{ movie.Plot }}
+    </p>
+    <p><strong>Year:</strong> {{ movie.Year }}</p>
+    <p><strong>Actor:</strong> {{ movie.Actors }}</p>
+    <p><strong>Language:</strong> {{ movie.Language }}</p>
+    <p><strong>Country:</strong> {{ movie.Country }}</p>
+    <p><strong>Awards:</strong> {{ movie.Awards }}</p>
+    <p><strong>Duration:</strong> {{ movie.Runtime }}</p>
+
+    <div *ngIf="movie.Ratings && movie.Ratings.length > 0">
+      <ul class="review-stars list-unstyled">
+        <li *ngFor="let rating of movie.Ratings">
+          <span
+            ><strong>{{ rating.Source }}:</strong> {{ rating.Value }}
+          </span>
+          <p class="stars">
+            <i
+              *ngFor="let star of calculateStars(rating.Value)"
+              class="bi"
+              [ngClass]="star"
+            ></i>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="poster mt-4 mt-xl-0 d-flex flex-column align-items-center justify-content-center">
+    <div class="card border-0 overflow-hidden">
+      <img [src]="movie.Poster" alt="" />
+    </div>
+    <button (click)="onFavorite(movie)" type="button" class="btn btn-outline-danger mt-2 w-100 d-flex align-items-center justify-content-center gap-2">
+      Favorite <i class="bi bi-heart"></i>
+    </button>
+  </div>
+</div>

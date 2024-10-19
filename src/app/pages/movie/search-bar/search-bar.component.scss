@@ -1,0 +1,25 @@
+.search-bar {
+  input {
+    margin-bottom: 1rem;
+  }
+
+  .search-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    input{
+      margin: 0 
+    }
+    select{
+      width: 9.375rem;
+    }
+
+    .search-form-buttons{
+      display: flex;
+      gap: 1rem
+    }
+  }
+}
+

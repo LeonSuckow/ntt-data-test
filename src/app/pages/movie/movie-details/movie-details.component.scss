@@ -1,0 +1,21 @@
+.movie-display {
+  // display: flex;
+  // justify-content: space-between;
+
+  .movie-info{
+    width: 100%;
+    max-width: 46.5625rem;
+  }
+  .poster { 
+    img{
+      width: 16.5rem;
+      height: 26.125rem;
+    }
+  }
+  .stars {
+    color: gold;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 18px;
+  }
+}

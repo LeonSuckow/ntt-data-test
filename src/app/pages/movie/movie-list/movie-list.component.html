@@ -1,0 +1,26 @@
+<app-search-bar
+  [filter]="filter"
+  (reset)="onResetSearch()"
+  (search)="onSearchMovies($event)"
+></app-search-bar>
+
+<div class="movie-container my-5" *ngIf="movies.length > 0">
+  <div class="movie-list">
+    <div *ngFor="let movie of movies" class="movie-item card overflow-hidden border-0">
+      <a (click)="onSelectMovie(movie.imdbID)">
+        <div class="movie-type card border-0 text-capitalize" [ngClass]="'bg-' + movie.Type">{{movie.Type}}</div>
+        <img [src]="movie.Poster" alt="{{ movie.Title }}" />
+        <div class="movie-title">
+          <span>{{movie.Title}}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <app-pagination [pagination]="pagination" (pageChange)="onPageChange($event)">
+  </app-pagination>
+</div>
+
+<p class="text-center my-5" *ngIf="movies.length <= 0">
+  Nenhum item na lista
+</p>

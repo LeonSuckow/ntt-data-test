@@ -1,0 +1,25 @@
+<div
+  *ngIf="show"
+  class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3"
+>
+  <div
+    class="toast align-items-center border-0 show"
+    [ngClass]="{
+      'bg-success text-white': toastType === 'success',
+      'bg-warning text-dark': toastType === 'warning',
+      'bg-danger text-white': toastType === 'danger',
+      'bg-info text-white': toastType === 'info'
+    }"
+    role="alert"
+  >
+    <div class="d-flex">
+      <div class="toast-body text-white">{{ message }}</div>
+      <button
+        type="button"
+        class="btn-close btn-close-white me-2 m-auto"
+        (click)="hideToast()"
+        aria-label="Close"
+      ></button>
+    </div>
+  </div>
+</div>

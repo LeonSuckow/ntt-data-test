@@ -1,0 +1,30 @@
+<div class="search-bar text-center my-5">
+  <h2 class="h4">Explore Movies and Series</h2>
+  <p>
+    Discover a vast collection of movies and series with complete information
+    and reviews from top platforms like IMDb, Rotten Tomatoes, and Metacritic.
+  </p>
+  <form class="search-form">
+    <input
+      type="text"
+      name="title"
+      [(ngModel)]="filter.title"
+      class="form-control d-inline w-50"
+      placeholder="Search for a movie"
+    />
+
+    <select class="form-select" name="type" [(ngModel)]="filter.type">
+      <option value="" selected>All types</option>
+      <option *ngFor="let movieType of movieTypes" [value]="movieType.value">
+        {{ movieType.label }}
+      </option>
+    </select>
+
+    <div class="search-form-buttons">
+      <button type="submit" class="btn btn-primary" (click)="searchMovies()">
+        Search
+      </button>
+      <button class="btn btn-secondary" (click)="resetSearch()">Reset</button>
+    </div>
+  </form>
+</div>
