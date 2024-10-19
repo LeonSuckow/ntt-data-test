@@ -14,7 +14,7 @@ import { LoadingService } from './loading.service';
 })
 export class MovieService {
   private apiKey = '4228e035'; // TODO: mudar para uma variavel de ambiente para não ficar exposto
-  private apiUrl = `http://www.omdbapi.com/?apikey=${this.apiKey}`;
+  private apiUrl = `https://www.omdbapi.com/?apikey=${this.apiKey}`;
 
   constructor(
     private httpClient: HttpClient,
