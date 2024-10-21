@@ -31,7 +31,7 @@
        git clone https://github.com/LeonSuckow/ntt-data-test.git
        cd ntt-data-test
        npm install
-       npm run dev
+       ng serve
    ```
 
 ## Tecnologias Usadas
