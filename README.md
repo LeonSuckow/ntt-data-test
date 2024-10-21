@@ -38,5 +38,4 @@
 - **Angular 18**: Framework principal para o desenvolvimento.
 - **Bootstrap 5**: Para estilização e componentes visuais responsivos.
 - **OMDb API**: API usada para buscar informações de filmes e séries.
-- **RxJS**: Para lidar com operações assíncronas como requisições HTTP.
 - **TypeScript**: Linguagem de programação principal para o desenvolvimento.
